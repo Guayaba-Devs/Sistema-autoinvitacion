@@ -1,5 +1,6 @@
 import ParticleBackground from "./components/Particles";
 import Card from "./components/Card";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         orgName={import.meta.env.VITE_ORGNAME}
         token={import.meta.env.VITE_TOKEN}
       />
+      <ToastContainer />
     </div>
   );
 }
