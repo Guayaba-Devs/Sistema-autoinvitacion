@@ -40,7 +40,7 @@ const Card: React.FC<CardProps> = ({ orgName, token }) => {
       },
       data: {
         email: correo,
-        role: process.env.REACT_APP_MEMBER as string,
+        role: import.meta.env.VITE_MEMBER as string,
       },
     };
 
@@ -60,7 +60,7 @@ const Card: React.FC<CardProps> = ({ orgName, token }) => {
       })
       .catch((error) => {
         toast.error(
-          `Error al enviar la invitación a ${correo}: ${error.message}`,
+          `Error al enviar la invitación a ${correo}`,
           {
             position: "top-center",
             autoClose: 5000,
@@ -109,7 +109,7 @@ const Card: React.FC<CardProps> = ({ orgName, token }) => {
             name="email"
             value={correo}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none text-center"
           />
         </label>
         <button
