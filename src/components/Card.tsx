@@ -72,6 +72,8 @@ const Card: React.FC<CardProps> = ({ orgName, token }) => {
             theme: "colored",
           }
         );
+
+        console.log(error.message)
       });
   };
 
