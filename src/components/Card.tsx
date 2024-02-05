@@ -41,13 +41,16 @@ const Card: React.FC<CardProps> = ({ orgName, token }) => {
       data: {
         email: correo,
         role: import.meta.env.VITE_MEMBER as string,
+        team_ids: [
+          parseInt(import.meta.env.VITE_TEAM_ID as string, 10)
+        ] as number[],
       },
     };
 
     // Enviar la solicitud para enviar la invitación
     axios(requestConfig)
       .then(() => {
-        toast.success(`La invitación se envió correctamente a ${correo}.`, {
+        toast.success(`La invitación se envió correctamente a ${correo}`, {
           position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
