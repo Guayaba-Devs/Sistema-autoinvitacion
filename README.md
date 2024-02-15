@@ -65,3 +65,6 @@ Esto iniciará un servidor de desarrollo y abrirá automáticamente tu navegador
 
 ## Contribuir :rocket:
 Si deseas contribuir al proyecto, sigue las instrucciones en el siguiente repositorio: [CONTRIBUTING](https://github.com/Guayaba-Devs/CONTRIBUTING.git)
+
+
+###### Made with 💖 by Guayaba Devs
